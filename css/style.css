@@ -2,7 +2,7 @@ body,html{
   background-color: #f2f2f2;
 }
 .landing-page{
-    width: 100%;
+    width: 90%;
     background-size: cover;
     color: #999;
     background-color: #f2f2f2;
@@ -58,11 +58,23 @@ body,html{
   flex-direction: column-reverse;
 }
 .updates-cl{
-background-color: #999;
+background-color: rgba(0,0,0,.6);
 width: 100%;
 height: 500px;
 margin: 2px;
 border-radius: 5px;
+background-image: url(../images/chemistry-bcg.jpg);
+background-blend-mode: multiply;
+}
+.updates-cl ul h4{
+  color: #ffffff;
+}
+.updates-cl ul a{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 120%;
+}
+.updates-cl ul a:hover{
+  color: white;
 }
 .updates-title{
   background-color: #74171A;
@@ -72,6 +84,8 @@ border-radius: 5px;
   text-align: center;
   font-size: 120%;
   border-radius: 5px;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255,255,255,.6);
 }
 .images-cl{
   background-color: black;
@@ -189,6 +203,12 @@ border-radius: 5px;
 .footer-down .foot h4{
   color: #cccccc;
 }
+.footer-down .foot a{
+  color: #999;
+}
+.footer-down .foot a:hover{
+  color: #ffffff;
+}
 @media screen and (min-width:768px){
   .footer-down{
     flex-direction: row;
@@ -206,6 +226,12 @@ border-radius: 5px;
     border-radius: 5px;
     font-size: 90%;
     padding: 5px;
+}
+.copyright-foot a{
+  color: #999;
+}
+.copyright-foot a:hover{
+  color: #ffffff;
 }
 @media screen and (min-width:768px) {
   .copyright-foot{
