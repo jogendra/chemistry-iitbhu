@@ -18,66 +18,179 @@
     <link rel="icon" type="image/png" href="" sizes="16x16">
     <link rel="shortcut icon" href="">
     <meta name="theme-color" content="#000000">
-  <title>Konfire | Jogendra Singh</title>
+  <title>Department of Chemistry | IIT(BHU), Varanasi</title>
 
   <!-- CSS files -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
+<!-- Script -->
+<script type="text/javascript">
+/*
+function dt_time()
+{
+	var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth() + 1; //Months are zero based
+    var curr_year = d.getFullYear();
+	var hours = d.getHours();
+	var minutes = d.getMinutes();
+	if (minutes < 10)
+	minutes = "0" + minutes
+	var suffix = "AM";
+	if (hours >= 12)
+	{
+		suffix = "PM";
+		hours = hours - 12;
+	}
+	if (hours == 0)
+	{
+		hours = 12;
+	}
+	document.getElementById("update").innerHTML = "<div style='font-style:italic; font-size: 11pt; font-weight: bold;'>" + curr_date + "-" + curr_month + "-" + curr_year + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + hours + ":" + minutes + ":" + suffix + "</div>";
+}
+*/
+function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = "<div style='font-size: 14pt; font-weight: bold; color: #000;'>" + h+":"+m+":"+s + "</div>";
+    var t = setTimeout(function(){startTime()},500);
+}
+function checkTime(i) {
+    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
 
 </head>
 <body>
+  <div class="top-bar"></div>
+  <div class="dep-logo"></div>
   <!-- Navbar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" style="display: -webkit-inline-box;" href="#">
-        <img src="images/icons8-Chrome/icons8-Chrome_100.png" title="External Link" height="100%">
-        <span>Konfire</span></a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand title-dep" href="#">Department of Chemistry</a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-    <form class="navbar-form navbar-right">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="glyphicon glyphicon-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-    <ul class="nav navbar-nav navbar-right">
+      <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
+          <li><a href="#">Department</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
       </li>
-      <li><a href="#">Page 2</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Office Staff</a></li>
+          <li><a href="#">Technical Staff</a></li>
+          <li><a href="#">Students</a></li>
+          <li><a href="#">Alumni</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Facilities</a></li>
+      <li><a href="#">Downloads</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
-
   </div>
+</div>
 </nav>
 <!-- Landing page container -->
-<div class="container landing-page" style="margin-top:50px">
-  <div class="title-name"><h2>Jogendra Singh</h2>
-  <hr>
-  <h4>Reves Vivants :)</h4>
-  <div>
+<div class="container landing-page">
+  <div class="main-div">
+    <div class="updates-cl">
+      <div class="updates-title">UPDATES</div>
+    </div>
+    <div class="images-cl"></div>
+  </div>
+  <div class="about-and-head">
+  <div class="about-dep">
+    <h4>ABOUT THE DEPARTMENT</h4>
+    <p>The Department of Chemistry, IIT-BHU, previously known as Department of Applied Chemistry (Institute of Technology), was established in the year of 1985. Earlier this Department was functioning as a Section in the School of Basic Sciences in Banaras Hindu University-Varanasi. This Department currently constitutes 16 faculty members including 9 Professors, 3 Associate Professors and 4 Assistant Professors. The prime responsibility of the department is to organize the teaching of chemistry courses for various B.Tech and integrated M.Tech programs. In addition, this department is also providing an excellent research platform to the students in various thrust areas of chemistry.<br><br>
+The Department of Chemistry offers a five year integrated M.Tech program in Industrial Chemistry and Ph. D programs in Organic, Inorganic, Physical and Analytical chemistry. More than 100 PhD's have been awarded from this department and about 50 students are currently pursuing their research. Research programs in the department have been supported by DST, CSIR, BRNS, UGC and AICTE. The department has recently received 85 lakhs from DST-FIST for the establishment of research and teaching facilities. The department is presently equipped with primary instruments including AAS, AFM, UV-Vis spectrophotometers, FT-IR, and powder-XRD, etc.
+    </p>
+  </div>
+  <div class="dept-head">
+    <h4>HEAD OF THE DEPARTMENT</h4>
+    <div class="dept-container">
+    <img src="images/hod-ic.jpg">
+    <p>Prof. R. B. Rastogi</p>
+    <p>Head, Department of Chemistry<br>
+Indian Institute of Technology
+(Banaras Hindu University)
+Varanasi - 221 005</p>
+  <p>Mobile : 9415817400<br>
+Office: 05426702879</p>
+<p>Email: head.apc@itbhu.ac.in<br>
+           rashmi.apc@itbhu.ac.in</p>
+  </div>
+  </div>
+</div>
+<div class="footer-down">
+  <!-- <div class="foot"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d866.4509679834631!2d82.99070359915551!3d25.261321563940147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa709ffee55d3a195!2sDept+of+Applied+Chemistry!5e0!3m2!1sen!2sin!4v1502216349985"></iframe></div> -->
+  <div class="foot">
+    <h4><img src="images/contact-us-icon.png" style="width:10%">Contact Us</h4>
+    <p>Department of Chemistry<br>
+Indian Institute of Technology<br>
+(Banaras Hindu University)<br>
+Varanasi - 221 005</p>
+  </div>
+  <div class="foot">
+    <h4><img src="images/phone-icon.png" style="width:7%">&nbsp;Phone Numbers</h4>
+    <p>Department Head - +919415817400</p>
+    <p>Office - 05426702879</p>
+    <p>Fax - </p>
+  </div>
+  <div class="foot">
+    <h4><img src="images/link-icon.png" style="width:7%">&nbsp;General Links</h4>
+    <a>IIT(BHU) Home</a><br>
+    <a>BHU Home</a><br>
+    <a>Training and Placement Cell</a><br>
+    <a>Chemistry, BHU</a><br>
+    <a>Main Library, IIT(BHU)</a><br>
+    <a>Central Library, (BHU)</a>
+  </div>
+  <div class="foot">
+  <h4><img src="images/counter-icon.png" style="width:8%">&nbsp;Visitor Number</h4>
+  <p><img src="http://hitwebcounter.com/counter/counter.php?page=5809544&style=0001&nbdigits=4&type=page&initCount=0" title="" Alt="" border="0" style="height: 22px;" /></p>
+  <p>Last Updated on Feb 28, 2015.</p>
 </div>
 </div>
+<div class="copyright-foot">
+  <p>Copyright ©2008 Indian Institute of Technology (Banaras Hindu University), Varanasi - 221005 | <a href="http://iitbhu.ac.in/various/disclaimer.shtml" target="_blank">Disclaimer</a></p>
 </div>
-<!-- About me container -->
-<div class="container">
-  <h2>Hello its me!</h2>
 </div>
 
   <!-- Javascript files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script>
+  $(function(){
+  $(".dropdown").hover(
+          function() {
+              $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+              $(this).toggleClass('open');
+              $('b', this).toggleClass("caret caret-up");
+          },
+          function() {
+              $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+              $(this).toggleClass('open');
+              $('b', this).toggleClass("caret caret-up");
+          });
+  });
+  </script>
 </body>
 </html>

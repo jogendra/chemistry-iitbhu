@@ -1,11 +1,11 @@
+body,html{
+  background-color: #f2f2f2;
+}
 .landing-page{
-    background-color: rgba(0,0,0,.6);
-    background-image: url(../images/allahbad.jpg);
-    background-blend-mode: multiply;
-    height: 100vh;
     width: 100%;
     background-size: cover;
     color: #999;
+    background-color: #f2f2f2;
 }
 .title-name{
     left: 0;
@@ -32,5 +32,184 @@
 .title-name hr{
   width: 25%;
 }
-
-/* social buttons */
+.about-me{
+  background-color:#fff;
+  color: #333;
+}
+.top-bar{
+  height: 50px;
+  width: 100%;
+  background-color: #74171A;
+}
+.title-dep{
+  display: block;
+  }
+@media screen and (min-width:768px){
+.title-dep{
+  display: none;
+  }
+}
+.dep-logo{
+  height: 150px;
+  width: 100%;
+}
+.main-div{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.updates-cl{
+background-color: #999;
+width: 100%;
+height: 500px;
+margin: 2px;
+border-radius: 5px;
+}
+.updates-title{
+  background-color: #74171A;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 120%;
+  border-radius: 5px;
+}
+.images-cl{
+  background-color: #777;
+  height: 500px;
+  width: 100%;
+  margin: 2px;
+  border-radius: 5px;
+}
+@media screen and (min-width:768px){
+  .main-div{
+    flex-direction: row;
+  }
+  .updates-cl{
+    width: 30%;
+  }
+  .images-cl{
+    width: 70%;
+  }
+}
+.about-and-head{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: #898989;
+}
+.about-dep{
+  width: 100%;
+}
+.dept-head{
+  width: 100%;
+  border-top: none;
+}
+.about-dep h4,.dept-head h4{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.about-dep h4{
+  width: 100%;
+  text-align: center;
+}
+.about-dep p{
+  font-size: 120%;
+  letter-spacing: 1px;
+}
+.dept-head h4{
+  width: 100%;
+  text-align: center;
+}
+.dept-container{
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+.dept-head .dept-container p:nth-child(2){
+  font-size: 120%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.dept-head .dept-container img{
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+@media screen and (min-width:768px){
+.about-and-head{
+  flex-direction: row;
+}
+.about-dep{
+  width: 75%;
+  margin: 2%;
+}
+.dept-head{
+  width: 25%;
+  margin: 2%;
+}
+.about-dep h4 {
+    width: 40%;
+    text-align: left;
+}
+.dept-head h4{
+  /*text-align: left;*/
+}
+}
+/*footer*/
+.footer-down{
+  display: flex;
+  flex-direction: column;
+  /*height: 200px;*/
+  width: 100%;
+  background-color: #74171A;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.footer-down .foot{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.footer-down .foot h4{
+  color: #cccccc;
+}
+@media screen and (min-width:768px){
+  .footer-down{
+    flex-direction: row;
+  }
+  .footer-down .foot{
+    width: 25%;
+    margin: 2%;
+    border-bottom: none;
+  }
+}
+.copyright-foot{
+    width: 100%;
+    background-color: #74171A;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 90%;
+    padding: 5px;
+}
+@media screen and (min-width:768px) {
+  .copyright-foot{
+    height: 50px;
+    width: 100%;
+    background-color: #74171A;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    padding: 0;
+  }
+}
