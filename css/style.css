@@ -74,11 +74,12 @@ border-radius: 5px;
   border-radius: 5px;
 }
 .images-cl{
-  background-color: #777;
+  background-color: black;
   height: 500px;
   width: 100%;
   margin: 2px;
   border-radius: 5px;
+  overflow: hidden;
 }
 @media screen and (min-width:768px){
   .main-div{
@@ -105,7 +106,7 @@ border-radius: 5px;
   border-top: none;
 }
 .about-dep h4,.dept-head h4{
-  background-color: black;
+  background-color: #74171A;
   color: white;
   padding: 10px;
   font-weight: 400;
@@ -119,6 +120,7 @@ border-radius: 5px;
 .about-dep p{
   font-size: 120%;
   letter-spacing: 1px;
+  font-weight: 300;
 }
 .dept-head h4{
   width: 100%;
@@ -132,6 +134,9 @@ border-radius: 5px;
     justify-content: center;
     text-align: center;
     padding: 5%;
+}
+.dept-head .dept-container p{
+  font-weight: 400;
 }
 .dept-head .dept-container p:nth-child(2){
   font-size: 120%;
@@ -212,4 +217,23 @@ border-radius: 5px;
     border-radius: 5px;
     padding: 0;
   }
+}
+.carousel-caption{
+  background-color: rgba(0,0,0,.3);
+  border-radius: 5px;
+  border: 1px solid;
+  color: #e5e5e5;
+}
+.carousel-caption h3{
+  text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 120%;
+}
+.carousel-caption p{
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.carousel-inner .item img{
+  height: 500px;
 }
