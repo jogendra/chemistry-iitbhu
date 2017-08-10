@@ -200,6 +200,16 @@ background-blend-mode: multiply;
   text-align: center;
   border-bottom: 1px solid;
 }
+.footer-down .foot button{
+  padding: 7px;
+  border: 1px solid white;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #74171A;
+}
+.footer-down .foot button:hover{
+  color: blue;
+}
 .footer-down .foot h4{
   color: #cccccc;
 }
