@@ -273,3 +273,7 @@ background-blend-mode: multiply;
 .carousel-inner .item img{
   height: 500px;
 }
+.about-program-p{
+  font-weight: 400;
+  letter-spacing: 1px;
+}
