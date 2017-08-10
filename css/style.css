@@ -52,6 +52,8 @@ body,html{
 .dep-logo{
   height: 150px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .main-div{
   display: flex;
