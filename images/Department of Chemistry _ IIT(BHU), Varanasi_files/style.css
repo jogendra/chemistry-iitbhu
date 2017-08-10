@@ -208,7 +208,6 @@ background-blend-mode: multiply;
   letter-spacing: 1px;
   border-radius: 5px;
   color: #74171A;
-  margin-bottom: 1%;
 }
 .footer-down .foot button:hover{
   color: blue;
@@ -280,95 +279,15 @@ background-blend-mode: multiply;
   font-weight: 400;
   letter-spacing: 1px;
 }
-/* courses.html */
 .main-content-div{
 
 }
 .main-content-div h3{
-      color: rgba(0,0,0,.5);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 125%;
+
 }
 .main-content-div hr{
  border: 1px solid #b8b8b8;
 }
 .main-content-div p{
-    font-size: 120%;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
-@media screen and (min-width:768px){
-  .main-content-div h3{
-    font-size: 150%;
-  }
-}
-/* gallery.html*/
 
-.gallery-title
-{
-  font-size: 30px;
-  color: rgba(0,0,0,.5);
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 70px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-}
-.filter-button
-{
-    font-size: 18px;
-    border: 1px solid #74171A;
-    border-radius: 5px;
-    text-align: center;
-    color: rgba(0,0,0,.7);
-    margin-bottom: 30px;
-}
-.filter-button:hover
-{
-    font-size: 18px;
-    border: 1px solid #74171A;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #74171A;
-
-}
-.btn-default:active .filter-button:active
-{
-    background-color: #42B32F;
-    color: white;
-}
-
-.port-image
-{
-    width: 100%;
-}
-
-.gallery_product
-{
-    margin-bottom: 30px;
-}
-/* Facilities */
-.main-content-div ul{
-
-}
-.main-content-div ul li{
-  font-size: 120%;
-  letter-spacing: 1px;
-  padding: 5px;
-}
-@media screen and (min-width:768px){
-  .main-content-div ul li{
-    font-size: 150%;
-  }
 }

@@ -87,15 +87,73 @@ function checkTime(i) {
 <!-- Landing page container -->
 <div class="container landing-page">
   <div class="main-content-div">
-    <h3>About M.Tech Program</h3>
-    <hr>
-    <p>Integrated M.Tech in Industrial Chemistry (IMD) is a five year course offered by the Department of Chemistry, IIT BHU-Varanasi. Currently more than 50 students are pursuing their M.Tech degree in this department. The maximum intake for this program is 20 students per year through IIT-JEE entrance examinations. Throughout this program, the students are exposed to various industry and research oriented courses offered by this department as well as other engineering departments in the Institute. This M.Tech program is comprised of various practicals and individual projects. After completion of the course, students will be familiar with modern analytical techniques used in the industry, recent trends in organic synthesis, applications of various Nano materials in industry, failure of materials due to corrosion and their safeguards, Importance of Biomass, Bio-fuels and Renewable energy sources, Polymer science, Computational and modelling studies, etc. in addition to the basic engineering knowledge. Since the faculty of chemistry is also involved in various research programs in many thrust areas, therefore, it provides an opportunity for the students to get exposed to the recent trends, developments in chemistry and related industries. Click here for Syllabus
-    </p>
-    <h3>About Ph.D. Program</h3>
-    <hr>
-    <p>The faculty members of the Department of Chemistry conduct cutting-edge research in many different areas of organic, inorganic, physical and analytical chemistry towards the enhancement of academic and industrial interactions. Organic synthesis, Carbohydrate chemistry, Green chemistry, Nano materials, Solid state chemistry, Sensors technology, Electrochemistry, Corrosion science, Bio-electrochemistry, Coordination and Organometallic chemistry, Theoretical and Computational Chemistry, Polymer science, Renewable energy and Bio-fuels are major research areas of this department. The department have already produced more than 100 Ph.D.'s and about 50 students are currently pursuing their doctorate studies. Faculty members have published thousands of research papers in leading International and National Journals and also contributed to various book chapters. There are about 15 ongoing research grants in the department, sponsored by various government organizations and the industry. Students are usually admitted to the PhD program through NET or GATE exams. IIT-BHU is providing fellowship for four years in the form of Teaching Assistantship for the research scholars. Click here for Syllabus
-    </p>
-  </div>
+    <section>
+    <div class="container">
+       <div class="row">
+       <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <h1 class="gallery-title">Gallery</h1>
+       </div>
+
+       <div align="center">
+           <button class="btn btn-default filter-button" data-filter="all">All</button>
+           <button class="btn btn-default filter-button" data-filter="hdpe">Teachers'Day Celebration - 2014</button>
+           <button class="btn btn-default filter-button" data-filter="sprinkle">Teachers'Day Celebration - 2014</button>
+           <button class="btn btn-default filter-button" data-filter="spray">Teachers'Day Celebration - 2014</button>
+       </div>
+       <br/>
+
+
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+
+           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+               <img src="images/thumb.png" class="img-responsive">
+           </div>
+       </div>
+   </div>
+</section>
   <br>
 <div class="footer-down">
   <!-- <div class="foot"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d866.4509679834631!2d82.99070359915551!3d25.261321563940147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa709ffee55d3a195!2sDept+of+Applied+Chemistry!5e0!3m2!1sen!2sin!4v1502216349985"></iframe></div> -->
@@ -177,6 +235,35 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+</script>
+<!-- gallery -->
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
 });
 </script>
 </body>
