@@ -87,73 +87,41 @@ function checkTime(i) {
 <!-- Landing page container -->
 <div class="container landing-page">
   <div class="main-content-div">
-    <section>
-    <div class="container">
-       <div class="row">
-       <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-           <h1 class="gallery-title">Gallery</h1>
-       </div>
-
-       <div align="center">
-           <button class="btn btn-default filter-button" data-filter="all">All</button>
-           <button class="btn btn-default filter-button" data-filter="hdpe">Teachers'Day Celebration - 2014</button>
-           <button class="btn btn-default filter-button" data-filter="sprinkle">Teachers'Day Celebration - 2014</button>
-           <button class="btn btn-default filter-button" data-filter="spray">Teachers'Day Celebration - 2014</button>
-       </div>
-       <br/>
-
-
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-
-           <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-               <img src="images/thumb.png" class="img-responsive">
-           </div>
-       </div>
-   </div>
-</section>
+    <h3>Facilities</h3>
+    <hr>
+    <div class="contacts-main-div">
+    <div class="contacts-div">
+    <h4>Head of the Department</h4>
+    <h5>Prof. R. B. Rastogi</h5>
+    <p>Department of Chemistry<br>
+Indian Institute of Technology<br>
+(Banaras Hindu University)<br>
+Varanasi - 221 005<br>
+05426702879<br>
+http://www.iitbhu.ac.in/apc/index.html<br>
+<span>head.apc@iitbhu.ac.in</span></p>
+</div>
+<div class="contacts-div">
+    <h4>Designed & Managed by:</h4>
+    <div class="sub-contact">
+    <h5>Web Convener</h5>
+    <p>Dr. Jeyakumar Kandasamy <br>
+<span>jeyakumar.chy@iitbhu.ac.in </span></p>
+<h5>Co-web-convener</h5>
+<p>Dr. Indrajit Sinha <br>
+<span>isinha.apc@itbhu.ac.in</span></p>
+</div>
+<div class="sub-contact">
+<h5>Designed by</h5>
+<p>Mr. Santosh Kumar<br>
+<span>kmrsantosh2011@gmail.com</span></p>
+<h5>Photographed by</h5>
+<p>Mr. Sachin Mishra<br>
+<span>sachin.mishra009@gmail.com</span></p>
+</div>
+</div>
+</div>
+  </div>
   <br>
 <div class="footer-down">
   <!-- <div class="foot"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d866.4509679834631!2d82.99070359915551!3d25.261321563940147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa709ffee55d3a195!2sDept+of+Applied+Chemistry!5e0!3m2!1sen!2sin!4v1502216349985"></iframe></div> -->
@@ -235,35 +203,6 @@ $(document).ready(function(){
       });
     } // End if
   });
-});
-</script>
-<!-- gallery -->
-<script>
-$(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-
-        }
-    });
-
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-
 });
 </script>
 </body>

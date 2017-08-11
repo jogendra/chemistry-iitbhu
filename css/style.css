@@ -383,3 +383,25 @@ background-blend-mode: multiply;
 .main-content-div ul li span{
   font-size: 50%;
 }
+/* Contacts Page */
+.contacts-main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contacts-div span{
+  color: rgba(0, 0, 120, 0.7);
+}
+.contacts-div span:hover{
+  color: rgba(0, 0, 220, 0.7);
+  cursor: pointer;
+}
+.sub-contact{
+    float: left;
+    padding-right: 50px;
+}
+@media screen and (min-width:768px){
+  .contacts-main-div{
+    flex-direction: row;
+  }
+}
