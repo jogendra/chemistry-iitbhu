@@ -360,7 +360,7 @@ background-blend-mode: multiply;
 }
 /* Facilities */
 .main-content-div ul{
-
+  text-align: left;
 }
 .main-content-div ul li{
   font-size: 120%;
@@ -371,4 +371,15 @@ background-blend-mode: multiply;
   .main-content-div ul li{
     font-size: 150%;
   }
+}
+/* Downloads */
+.main-content-div ul li a{
+      color: rgba(0, 0, 80, 0.5);
+      font-size: 50%;
+}
+.main-content-div ul li a:hover{
+      color: rgba(0, 0, 220, 0.7);
+}
+.main-content-div ul li span{
+  font-size: 50%;
 }
