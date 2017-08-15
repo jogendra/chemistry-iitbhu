@@ -405,3 +405,29 @@ background-blend-mode: multiply;
     flex-direction: row;
   }
 }
+
+/* FACULTY PAGE */
+.image-info-div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+}
+.image-div{
+
+}
+.image-div img{
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.info-div{
+  margin: auto;
+}
+.image-info-div .div-left,.image-info-div .div-right{
+display: flex;
+}
+.interest-div{
+  background: red;
+  width: 100%;
+}
