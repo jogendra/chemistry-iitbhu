@@ -465,3 +465,35 @@ float: right;
 .div-left .interest-div p span, .div-right .interest-div p span{
 font-weight: 500;
 }
+
+
+
+table{
+  background-color: #F4F4F3;
+}
+
+.des-logo{
+display: none;
+}
+.mob-logo{
+display: block;
+}
+@media screen and (min-width:768px){
+  .des-logo{
+display: block;
+  }
+  .mob-logo{
+display: none;
+  }
+}
+@media screen and (max-width:768px){
+  .images-cl{
+    height: 250px;
+  }
+  .carousel-inner .item img{
+    height: 250px;
+  }
+  .carousel-caption h3, .carousel-caption p{
+    font-size: 80%;
+  }
+}
