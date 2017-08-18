@@ -496,4 +496,26 @@ display: none;
   .carousel-caption h3, .carousel-caption p{
     font-size: 80%;
   }
+  .image-info-div .div-left, .image-info-div .div-right{
+    width: 100%;
+  }
+  .not-displayed{
+    display: none;
+  }
+  .div-left .image-div img, .div-right .image-div img{
+    width: 100px;
+  }
+  .info-div p{
+    font-size: 80%;
+  }
+  .image-info-div .div-left, .image-info-div .div-right{
+    padding: 0;
+  }
+  .div-left .interest-div, .div-right .interest-div{
+    margin-bottom: 3%;
+    height: auto;
+  }
+  .interest-div p{
+    font-size: 90%;
+  }
 }
