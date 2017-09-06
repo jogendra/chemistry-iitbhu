@@ -528,3 +528,7 @@ display: none;
 .top-bar p:hover{
   color: #337ab7;
 }
+.div-left .image-div .former-hod-img, .div-right .image-div .former-hod-img{
+  height: 100px;
+  width: 100px;
+}
