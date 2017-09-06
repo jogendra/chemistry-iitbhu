@@ -520,3 +520,11 @@ display: none;
     font-size: 90%;
   }
 }
+.top-bar p{
+  color: white;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.top-bar p:hover{
+  color: #337ab7;
+}
