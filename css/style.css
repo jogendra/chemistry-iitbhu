@@ -432,6 +432,7 @@ padding: 2%;
 }
 .div-left .image-div img, .div-right .image-div img{
   width: 150px;
+  height: 150px;
   border: 1px solid black;
   border-radius: 50%;
   margin: auto;
