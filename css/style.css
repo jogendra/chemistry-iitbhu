@@ -555,8 +555,6 @@ display: none;
 
 .main-content-div .sub-hr{
   border: 1px solid rgba(0,0,0,0.09);
-  width: 50%;
-  margin: inherit;
 }
 .prof-div ul li{
     font-size: 100%;
