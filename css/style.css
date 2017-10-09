@@ -537,3 +537,29 @@ display: none;
   height: 100px;
   width: 100px;
 }
+
+/* Profs Page */
+.prof-img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: auto;
+  display: table;
+  border: 2px solid;
+}
+
+.main-content-div h2{
+      font-size: 120%;
+      letter-spacing: 1px;
+}
+
+.main-content-div .sub-hr{
+  border: 1px solid rgba(0,0,0,0.09);
+  width: 50%;
+  margin: inherit;
+}
+.prof-div ul li{
+    font-size: 100%;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
